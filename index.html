@@ -1,33 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Certificate Verification</title>
+<title>Certificate Verification</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef3f7;
+    color: #1e293b;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 650px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.header {
+    background: #173f67;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header p {
+    margin: 8px 0 0;
+    font-size: 15px;
+}
+
+.content {
+    padding: 25px;
+}
+
+.verified {
+    background: #dcfce7;
+    color: #15803d;
+    border: 1px solid #86efac;
+    border-radius: 12px;
+    text-align: center;
+    padding: 15px;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 16px 5px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.label {
+    font-weight: bold;
+    color: #64748b;
+}
+
+.value {
+    text-align: right;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.active {
+    color: #15803d;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+@media (max-width: 550px) {
+    .row {
+        display: block;
     }
 
-    body {
-      margin: 0;
-      padding: 30px 15px;
-      font-family: Arial, sans-serif;
-      background: #eef3f7;
-      color: #334155;
+    .label {
+        margin-bottom: 6px;
     }
 
-    .card {
-      max-width: 620px;
-      margin: 30px auto;
-      background: white;
-      border-radius: 18px;
-      padding: 35px 30px;
-      box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+    .value {
+        text-align: left;
     }
 
-    h1 {
-      text-align: center;
-      color: #1e3a5f
+    .header h1 {
+        font-size: 24px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="header">
+            <h1>Certificate Verification</h1>
+            <p>Certificate Verification Portal</p>
+        </div>
+
+        <div class="content">
+
+            <div class="verified">
+                ✓ CERTIFICATE ACTIVE
+            </div>
+
+            <div class="row">
+                <div class="label">Learner Name</div>
+                <div class="value">PRANAV SALOKHE</div>
+            </div>
+
+            <div class="row">
+                <div class="label">Project Name</div>
+                <div class="value">
+                    Smart Student Performance Prediction System Using Python &amp; Machine Learning
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">Certificate ID</div>
+                <div class="value">CERT-PRANAV-001</div>
+            </div>
+
+            <div class="row">
+                <div class="label">Status</div>
+                <div class="value active">ACTIVE</div>
+            </div>
+
+            <div class="row">
+                <div class="label">Verification</div>
+                <div class="value">Successfully Verified</div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Certificate Verification Portal<br>
+            Certificate information provided by the issuer.
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+  </html>
